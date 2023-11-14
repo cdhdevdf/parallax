@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Parallax</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<style type="text/css">
+
+		/*CONFIGURAÇÕES PADRÕES
+		_________________________________________*/
+
+		body, html {
+			margin: 0;
+			font: 16px "Lato", sans-serif;
+			color: #777;
+			height: 100%; /*truck do parallax é colocar altura 100%*/
+		}
+		
+		.conteudo {
+			color: #777;
+			background-color: white;
+			text-align: justify;
+			padding: 50px 80px;
+		}
+
+		h3 {
+			text-transform: uppercase; /*texto maíusculo*/
+			color: #111;
+			text-align: center;
+		}
+
+		/*EFEITO PARALLAX
+		_________________________________________*/
+
+		.caixa1, .caixa2, .caixa3, .caixa4 {
+			position: relative; /*precisa definir como relativo pois iremos usar absoluto os elementos dentro dele*/
+			height: 100%;
+			opacity: 0.7; /*aplicando opacidade na imagem, esse controle vai de 0 a 1*/
+			background-repeat: no-repeat; /*não quero que esse background repita*/
+			background-size: cover; /*automaticamente cobre toda area*/
+			background-position: center; /*centraliza a imagem mesmo diminuindo a tela*/
+			background-attachment: fixed; /*fixando a imagem e somente o conteudo move*/
+			/*border: 1px solid red; colocamos só para marcar a caixa*/
+
+		}
+
+		.caixa1 {
+			background-image: url(imagens/imagem1.jpg);
+		}
+
+		.caixa2 {
+			background-image: url(imagens/imagem2.jpg);
+		}
+
+		.caixa3 {
+			background-image: url(imagens/imagem3.jpg);
+		}
+
+		.caixa4 {
+			background-image: url(imagens/imagem4.jpg);
+		}
+
+		p {
+			margin-bottom: 20px;
+		}
+
+		.conteudo-titulo {
+			position: absolute; /*definindo uma posição absoluta*/
+			left: 0%; /*colando na lateral esquerda o titulo*/
+			top: 50%; /*posicionando em 50% no centro*/
+			width: 100%; /*conteúdo do título ocupe 100% da tela*/
+			text-align: center; /*conteúdo do título centralizado*/		
+		}
+
+		/*CENTRALIZANDO O TÍTULO*/
+
+		.conteudo-titulo span.titulo {
+			color: #fff; /*cor da fonte*/
+			background-color: #111; /*cor de fundo*/
+			padding: 18px; /*espaçamento da fonte até a borda*/
+			font-size: 25px; /*tamanho da fonte*/
+			letter-spacing: 5px; /*espaçamento entre letras*/
+			text-transform: uppercase; /*texto maíusculo*/
+		}
+
+	</style>
+
+		
+
+</head>
+<body>
+	<div class="caixa1">
+		<div class="conteudo-titulo">
+			<span class="titulo">PASSEIO DE BALÕES</span>
+		</div>
+	</div>
+
+	<div class="conteudo">
+		<h3>Paralax 1</h3>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt nec enim eget laoreet. Duis dictum sollicitudin urna eu aliquam. Ut lacinia ante id arcu posuere dignissim.
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt nec enim eget laoreet. Duis dictum sollicitudin urna eu aliquam. Ut lacinia ante id arcu posuere dignissim. Lorem ipsum dolor sit amet,  
+		</p>
+
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt nec enim eget laoreet. Duis dictum sollicitudin urna eu aliquam. Ut lacinia ante id arcu posuere dignissim.
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt nec enim eget laoreet. Duis dictum sollicitudin urna eu aliquam. Ut lacinia ante id arcu posuere dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		</p>
+
+	</div>
+
+	<div class="caixa2">
+
+		<div class="conteudo-titulo">
+			<span class="titulo">Pegando a estrada</span>
+		</div>
+
+	</div>
+
+	<div class="conteudo">
+		<h3>Paralax 2</h3>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt nec enim eget laoreet. Duis dictum sollicitudin urna eu aliquam. Ut lacinia ante id arcu posuere dignissim.
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt nec enim eget laoreet. Duis dictum sollicitudin urna eu aliquam. Ut lacinia ante id arcu posuere dignissim. 
+		</p>
+
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt nec enim eget laoreet. Duis dictum sollicitudin urna eu aliquam. Ut lacinia ante id arcu posuere dignissim.
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt nec enim eget laoreet. Duis dictum sollicitudin urna eu aliquam.
+		</p>
+
+	</div>
+
+
+	<div class="caixa3">
+		
+		<div class="conteudo-titulo">
+			<span class="titulo">Pôr do sol</span>
+		</div>
+
+	</div>
+
+	<div class="conteudo">
+		<h3>Paralax 3</h3>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt nec enim eget laoreet. Duis dictum sollicitudin urna eu aliquam. Ut lacinia ante id arcu posuere dignissim.
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt nec enim eget laoreet. Duis dictum sollicitudin urna eu aliquam. Ut lacinia ante id arcu posuere dignissim. 
+		</p>
+
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt nec enim eget laoreet. Duis dictum sollicitudin urna eu aliquam. Ut lacinia ante id arcu posuere dignissim.
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt nec enim eget laoreet. Duis dictum sollicitudin urna eu aliquam.
+		</p>
+
+	</div>
+
+	<div class="caixa4">
+		
+		<div class="conteudo-titulo">
+			<span class="titulo">Montanhas</span>
+		</div>
+
+	</div>
+	
+</body>
+</html>
